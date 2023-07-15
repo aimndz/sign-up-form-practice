@@ -1,0 +1,188 @@
+@font-face {
+  font-family: Metal Mania;
+  src: url(Metal\ Mania.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  background-color: #000000;
+  color: white;
+  height: 100vh;
+  display: flex;
+  font-family: Helvetica, sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.05em;
+}
+
+.bg-img {
+  background-image: url(ave-calvar-_HwGcoyr5Gk-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 80%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+}
+
+.bg-black {
+  display: flex;
+  align-items: center;
+}
+
+.bg-black > * {
+  flex: 1;
+}
+
+.logo {
+  width: 5em;
+}
+
+.logo-title {
+  font-family: Metal Mania;
+  letter-spacing: 0.15em;
+  font-size: 5em;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.form-bg {
+  padding: 2em 3em;
+  background-color: #ff4c29;
+  color: #000000;
+}
+
+.form-row {
+  display: flex;
+  gap: 2em;
+}
+
+.container {
+  padding: 2em 3em;
+}
+
+.main-text p:first-child {
+  margin-bottom: 2em;
+}
+
+form h1 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.form-column {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5em;
+}
+
+label {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  margin-bottom: 0.3em;
+}
+
+input {
+  outline: 1px solid #000000;
+  border: 0;
+  padding: 0.6rem 0.7rem;
+  border-radius: 0.5em;
+  font-size: 1rem;
+}
+
+input::placeholder {
+  color: #3838388b;
+}
+
+input:focus {
+  outline: 2px solid #388bff;
+  border: 0;
+  box-shadow: 3px 3px 5px #00000068;
+}
+
+.container button {
+  border: 0;
+  background-color: #ff4c29;
+  padding: 1em;
+  text-transform: uppercase;
+  border-radius: 5px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-bottom: 2em;
+}
+
+.container button:hover {
+  opacity: 0.8;
+}
+
+.container p {
+  color: white;
+  text-decoration: none;
+}
+
+.container a {
+  color: #ff4c29;
+  text-decoration: none;
+}
+
+.container a:hover {
+  text-decoration: underline;
+}
+
+input:valid {
+  outline: 2px solid #12bc0f;
+}
+
+input:invalid {
+  outline: 2px solid #b20a0a;
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    flex-direction: column;
+  }
+
+  .bg-img {
+    padding: 5em;
+    width: 100%;
+  }
+
+  .form-row {
+    justify-content: center;
+  }
+
+  form h1 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .form-row {
+    flex-direction: column;
+    gap: 0.5em;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .form-bg,
+  .container {
+    padding: 1.5em 1.5em;
+  }
+}
